@@ -1,0 +1,49 @@
+[1.478s] Invoking command in '/home/lola/ROS2_workspace/supergiz_ws/src/ia': PYTHONPATH=/home/lola/ROS2_workspace/supergiz_ws/build/ia/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(entorno_supergiz) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ia build --build-base /home/lola/ROS2_workspace/supergiz_ws/build/ia/build install --record /home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log --install-scripts $base/lib/ia --single-version-externally-managed install_data
+[1.929s] running egg_info
+[1.930s] creating ../../build/ia/ia.egg-info
+[1.956s] writing ../../build/ia/ia.egg-info/PKG-INFO
+[1.957s] writing dependency_links to ../../build/ia/ia.egg-info/dependency_links.txt
+[1.958s] writing entry points to ../../build/ia/ia.egg-info/entry_points.txt
+[1.958s] writing requirements to ../../build/ia/ia.egg-info/requires.txt
+[1.959s] writing top-level names to ../../build/ia/ia.egg-info/top_level.txt
+[1.959s] writing manifest file '../../build/ia/ia.egg-info/SOURCES.txt'
+[2.020s] reading manifest file '../../build/ia/ia.egg-info/SOURCES.txt'
+[2.021s] writing manifest file '../../build/ia/ia.egg-info/SOURCES.txt'
+[2.022s] running build
+[2.022s] running build_py
+[2.022s] creating /home/lola/ROS2_workspace/supergiz_ws/build/ia/build
+[2.023s] creating /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib
+[2.024s] creating /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+[2.026s] copying ia/prueba_1.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+[2.026s] copying ia/detector_yolo.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+[2.027s] copying ia/publicador_foto.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+[2.027s] copying ia/__init__.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+[2.028s] copying ia/segmentador_suelo.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+[2.028s] running install
+[2.037s] running install_lib
+[2.063s] creating /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+[2.064s] copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/prueba_1.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+[2.065s] copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/detector_yolo.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+[2.065s] copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/publicador_foto.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+[2.066s] copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/__init__.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+[2.066s] copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/segmentador_suelo.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+[2.067s] byte-compiling /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/prueba_1.py to prueba_1.cpython-312.pyc
+[2.069s] byte-compiling /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/detector_yolo.py to detector_yolo.cpython-312.pyc
+[2.070s] byte-compiling /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/publicador_foto.py to publicador_foto.cpython-312.pyc
+[2.071s] byte-compiling /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/__init__.py to __init__.cpython-312.pyc
+[2.072s] byte-compiling /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/segmentador_suelo.py to segmentador_suelo.cpython-312.pyc
+[2.074s] running install_data
+[2.075s] creating /home/lola/ROS2_workspace/supergiz_ws/install/ia/share/ament_index
+[2.076s] creating /home/lola/ROS2_workspace/supergiz_ws/install/ia/share/ament_index/resource_index
+[2.077s] creating /home/lola/ROS2_workspace/supergiz_ws/install/ia/share/ament_index/resource_index/packages
+[2.078s] copying resource/ia -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/share/ament_index/resource_index/packages
+[2.078s] copying package.xml -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/share/ia
+[2.079s] running install_egg_info
+[2.114s] Copying ../../build/ia/ia.egg-info to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia-0.0.0-py3.12.egg-info
+[2.116s] running install_scripts
+[2.335s] Installing detector_yolo script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+[2.337s] Installing prueba_1 script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+[2.337s] Installing publicador_foto script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+[2.338s] Installing segmentador_suelo script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+[2.339s] writing list of installed files to '/home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log'
+[2.445s] Invoked command in '/home/lola/ROS2_workspace/supergiz_ws/src/ia' returned '0': PYTHONPATH=/home/lola/ROS2_workspace/supergiz_ws/build/ia/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(entorno_supergiz) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ia build --build-base /home/lola/ROS2_workspace/supergiz_ws/build/ia/build install --record /home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log --install-scripts $base/lib/ia --single-version-externally-managed install_data

@@ -1,0 +1,7 @@
+/home/lola/entorno_supergiz/lib/python3.12/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+  File "/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/percepcion_completa.py", line 217
+    """import rclpy
+       ^^^^^^
+SyntaxError: invalid syntax
+

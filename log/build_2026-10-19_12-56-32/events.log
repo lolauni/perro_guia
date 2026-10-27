@@ -1,0 +1,68 @@
+[0.000000] (-) TimerEvent: {}
+[0.001196] (ia) JobQueued: {'identifier': 'ia', 'dependencies': OrderedDict()}
+[0.002179] (ia) JobStarted: {'identifier': 'ia'}
+[0.099243] (-) TimerEvent: {}
+[0.200839] (-) TimerEvent: {}
+[0.302151] (-) TimerEvent: {}
+[0.403440] (-) TimerEvent: {}
+[0.505094] (-) TimerEvent: {}
+[0.605908] (-) TimerEvent: {}
+[0.708071] (-) TimerEvent: {}
+[0.809402] (-) TimerEvent: {}
+[0.911716] (-) TimerEvent: {}
+[1.012529] (-) TimerEvent: {}
+[1.120128] (-) TimerEvent: {}
+[1.223550] (-) TimerEvent: {}
+[1.329286] (-) TimerEvent: {}
+[1.438369] (-) TimerEvent: {}
+[1.539829] (-) TimerEvent: {}
+[1.648925] (-) TimerEvent: {}
+[1.757540] (-) TimerEvent: {}
+[1.859316] (-) TimerEvent: {}
+[1.968363] (-) TimerEvent: {}
+[2.077394] (-) TimerEvent: {}
+[2.186533] (-) TimerEvent: {}
+[2.260262] (ia) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ia', 'build', '--build-base', '/home/lola/ROS2_workspace/supergiz_ws/build/ia/build', 'install', '--record', '/home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log', '--install-scripts', '$base/lib/ia', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lola/ROS2_workspace/supergiz_ws/src/ia', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lola', 'GIT_ASKPASS': '/home/lola/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{c740805d-1763-5706-8928-9a8d2426025d}', 'HOME': '/home/lola', 'OLDPWD': '/home/lola/ROS2_workspace/supergiz_ws', 'TERM_PROGRAM_VERSION': '1.142.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-6e9853c1-5d8d-4807-b656-cf1aec76293c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/lola/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\](entorno_supergiz) \\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/home/lola/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/lola/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lola/ROS2_workspace/supergiz_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lola', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/1008_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/lola/entorno_supergiz/bin:/home/lola/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/lola/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/lola/.vscode-server/bin/6d62b1d5dace93a33b3a6d3eca1317bd5e15bcb1/bin/remote-cli:/home/lola/entorno_supergiz/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/SIMULIA/Commands:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/WireGuard/:/mnt/c/Users/lolit/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/lolit/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/lolit/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/lolit/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lolit/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/lolit/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/users/lolit/.local/bin:/mnt/c/users/lolit/appdata/roaming/python/python313/scripts:/mnt/c/Users/lolit/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/lolit/AppData/Local/Programs/DockerDesktop/resources/bin:/snap/bin:/home/lola/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', 'WT_SESSION': 'c4f4a547-ed7b-4a56-ba9c-7d02e563bf4e', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/lola/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-1a485975e10a01d5.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/lola/.vscode-server/data/User/workspaceStorage/d4665ba0560f481f62e36bc569243273/ms-python.python/pythonrc.py', 'VIRTUAL_ENV_PROMPT': '(entorno_supergiz)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-348fd89e56.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/lola/ROS2_workspace/supergiz_ws/install/ia:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/lola/entorno_supergiz', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/lola/ROS2_workspace/supergiz_ws/build/ia', 'COPILOT_DEBUG_NONCE': '2542e15781a0383ef12206afae479ecf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lola/ROS2_workspace/supergiz_ws/build/ia/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages:/home/lola/entorno_supergiz/lib/python3.12/site-packages:/home/lola/entorno_supergiz/lib/python3.12/site-packages:/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages:/home/lola/entorno_supergiz/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'}), 'shell': False}
+[2.288089] (-) TimerEvent: {}
+[2.397170] (-) TimerEvent: {}
+[2.503174] (-) TimerEvent: {}
+[2.606706] (-) TimerEvent: {}
+[2.709724] (-) TimerEvent: {}
+[2.713519] (ia) StderrLine: {'line': b"/home/lola/entorno_supergiz/lib/python3.12/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[2.714118] (ia) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[2.812346] (-) TimerEvent: {}
+[2.916930] (-) TimerEvent: {}
+[3.026023] (-) TimerEvent: {}
+[3.036893] (ia) StdoutLine: {'line': b'running egg_info\n'}
+[3.090862] (ia) StdoutLine: {'line': b'writing ../../build/ia/ia.egg-info/PKG-INFO\n'}
+[3.092497] (ia) StdoutLine: {'line': b'writing dependency_links to ../../build/ia/ia.egg-info/dependency_links.txt\n'}
+[3.093335] (ia) StdoutLine: {'line': b'writing entry points to ../../build/ia/ia.egg-info/entry_points.txt\n'}
+[3.094114] (ia) StdoutLine: {'line': b'writing requirements to ../../build/ia/ia.egg-info/requires.txt\n'}
+[3.094717] (ia) StdoutLine: {'line': b'writing top-level names to ../../build/ia/ia.egg-info/top_level.txt\n'}
+[3.128919] (-) TimerEvent: {}
+[3.205097] (ia) StdoutLine: {'line': b"reading manifest file '../../build/ia/ia.egg-info/SOURCES.txt'\n"}
+[3.208288] (ia) StdoutLine: {'line': b"writing manifest file '../../build/ia/ia.egg-info/SOURCES.txt'\n"}
+[3.209326] (ia) StdoutLine: {'line': b'running build\n'}
+[3.209827] (ia) StdoutLine: {'line': b'running build_py\n'}
+[3.210561] (ia) StdoutLine: {'line': b'copying ia/percepcion_completa.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia\n'}
+[3.212293] (ia) StdoutLine: {'line': b'running install\n'}
+[3.223882] (ia) StdoutLine: {'line': b'running install_lib\n'}
+[3.229545] (-) TimerEvent: {}
+[3.283276] (ia) StdoutLine: {'line': b'copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/percepcion_completa.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia\n'}
+[3.285408] (ia) StdoutLine: {'line': b'byte-compiling /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/percepcion_completa.py to percepcion_completa.cpython-312.pyc\n'}
+[3.289411] (ia) StdoutLine: {'line': b'running install_data\n'}
+[3.290189] (ia) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.329953] (-) TimerEvent: {}
+[3.351961] (ia) StdoutLine: {'line': b"removing '/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[3.355770] (ia) StdoutLine: {'line': b'Copying ../../build/ia/ia.egg-info to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia-0.0.0-py3.12.egg-info\n'}
+[3.365059] (ia) StdoutLine: {'line': b'running install_scripts\n'}
+[3.432585] (-) TimerEvent: {}
+[3.498375] (ia) StdoutLine: {'line': b'Installing detector_yolo script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia\n'}
+[3.499549] (ia) StdoutLine: {'line': b'Installing percepcion_completa script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia\n'}
+[3.500626] (ia) StdoutLine: {'line': b'Installing publicador_foto script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia\n'}
+[3.501488] (ia) StdoutLine: {'line': b'Installing segmentador_suelo script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia\n'}
+[3.503503] (ia) StdoutLine: {'line': b"writing list of installed files to '/home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log'\n"}
+[3.532925] (-) TimerEvent: {}
+[3.586626] (ia) CommandEnded: {'returncode': 0}
+[3.616927] (ia) JobEnded: {'identifier': 'ia', 'rc': 0}
+[3.620701] (-) EventReactorShutdown: {}

@@ -1,0 +1,37 @@
+/home/lola/entorno_supergiz/lib/python3.12/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/ia/ia.egg-info/PKG-INFO
+writing dependency_links to ../../build/ia/ia.egg-info/dependency_links.txt
+writing entry points to ../../build/ia/ia.egg-info/entry_points.txt
+writing requirements to ../../build/ia/ia.egg-info/requires.txt
+writing top-level names to ../../build/ia/ia.egg-info/top_level.txt
+reading manifest file '../../build/ia/ia.egg-info/SOURCES.txt'
+writing manifest file '../../build/ia/ia.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ia/prueba_1.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+copying ia/detector_yolo.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+copying ia/publicador_foto.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+copying ia/__init__.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+copying ia/segmentador_suelo.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+running install
+running install_lib
+copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/prueba_1.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/detector_yolo.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/publicador_foto.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/__init__.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/segmentador_suelo.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+byte-compiling /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/segmentador_suelo.py to segmentador_suelo.cpython-312.pyc
+running install_data
+copying resource/ia -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/share/ament_index/resource_index/packages
+copying package.xml -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/share/ia
+running install_egg_info
+removing '/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/ia/ia.egg-info to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia-0.0.0-py3.12.egg-info
+running install_scripts
+Installing detector_yolo script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+Installing prueba_1 script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+Installing publicador_foto script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+Installing segmentador_suelo script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+writing list of installed files to '/home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log'

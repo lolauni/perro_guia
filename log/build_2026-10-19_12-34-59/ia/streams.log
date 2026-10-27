@@ -1,0 +1,29 @@
+[2.859s] Invoking command in '/home/lola/ROS2_workspace/supergiz_ws/src/ia': PYTHONPATH=/home/lola/ROS2_workspace/supergiz_ws/build/ia/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(entorno_supergiz) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ia build --build-base /home/lola/ROS2_workspace/supergiz_ws/build/ia/build install --record /home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log --install-scripts $base/lib/ia --single-version-externally-managed install_data
+[3.319s] /home/lola/entorno_supergiz/lib/python3.12/site-packages/setuptools/_distutils/dist.py:318: UserWarning: Unknown distribution option: 'tests_require'
+[3.320s]   warnings.warn(msg)
+[3.768s] running egg_info
+[3.853s] writing ../../build/ia/ia.egg-info/PKG-INFO
+[3.875s] writing dependency_links to ../../build/ia/ia.egg-info/dependency_links.txt
+[3.877s] writing entry points to ../../build/ia/ia.egg-info/entry_points.txt
+[3.878s] writing requirements to ../../build/ia/ia.egg-info/requires.txt
+[3.880s] writing top-level names to ../../build/ia/ia.egg-info/top_level.txt
+[4.015s] reading manifest file '../../build/ia/ia.egg-info/SOURCES.txt'
+[4.019s] writing manifest file '../../build/ia/ia.egg-info/SOURCES.txt'
+[4.019s] running build
+[4.020s] running build_py
+[4.024s] copying ia/percepcion_completa.py -> /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia
+[4.027s] running install
+[4.040s] running install_lib
+[4.111s] copying /home/lola/ROS2_workspace/supergiz_ws/build/ia/build/lib/ia/percepcion_completa.py -> /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia
+[4.115s] byte-compiling /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia/percepcion_completa.py to percepcion_completa.cpython-312.pyc
+[4.121s] running install_data
+[4.122s] running install_egg_info
+[4.198s] removing '/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia-0.0.0-py3.12.egg-info' (and everything under it)
+[4.202s] Copying ../../build/ia/ia.egg-info to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages/ia-0.0.0-py3.12.egg-info
+[4.208s] running install_scripts
+[4.376s] Installing detector_yolo script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+[4.377s] Installing percepcion_completa script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+[4.378s] Installing publicador_foto script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+[4.378s] Installing segmentador_suelo script to /home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/ia
+[4.380s] writing list of installed files to '/home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log'
+[4.475s] Invoked command in '/home/lola/ROS2_workspace/supergiz_ws/src/ia' returned '0': PYTHONPATH=/home/lola/ROS2_workspace/supergiz_ws/build/ia/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lola/ROS2_workspace/supergiz_ws/install/ia/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(entorno_supergiz) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ia build --build-base /home/lola/ROS2_workspace/supergiz_ws/build/ia/build install --record /home/lola/ROS2_workspace/supergiz_ws/build/ia/install.log --install-scripts $base/lib/ia --single-version-externally-managed install_data

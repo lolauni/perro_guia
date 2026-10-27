@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: ia
+Version: 0.0.0
+Summary: Paquete de IA para ROS 2
+Maintainer: lola
+Maintainer-email: lola@todo.com
+License: Apache-2.0
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

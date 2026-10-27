@@ -1,0 +1,6 @@
+[console_scripts]
+detector_yolo = ia.detector_yolo:main
+percepcion_3d = ia.percepcion_3d:main
+percepcion_completa = ia.percepcion_completa:main
+publicador_foto = ia.publicador_foto:main
+segmentador_suelo = ia.segmentador_suelo:main
