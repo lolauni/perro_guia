@@ -47,6 +47,7 @@ if __name__ == '__main__':
 """
 
 #Para simular una cámara de vídeo real que envíe un stream continuo de fotogramas,  se publican las imagenes en bucle con un timer.
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
