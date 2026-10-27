@@ -25,6 +25,7 @@ setup(
             'segmentador_suelo = ia.segmentador_suelo:main',
             'percepcion_completa = ia.percepcion_completa:main',
             'percepcion_3d = ia.percepcion_3d:main',
+            'percepcion_fusion = ia.percepcion_fusion:main',
         ],
     },
 )
