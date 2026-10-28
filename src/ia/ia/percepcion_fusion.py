@@ -46,9 +46,25 @@ PALETA = np.array([[0, 0, 0], [0, 255, 0], [0, 0, 255], [255, 0, 255]], dtype=np
 QOS_IMG = QoSProfile(reliability=ReliabilityPolicy.BEST_EFFORT,
                      history=HistoryPolicy.KEEP_LAST, depth=1)
 
+GF_RADIO = 6      # px: radio del filtro guiado (más alto = más suave)
+GF_EPS = 1e-3     # menor = bordes más fieles a la imagen
+
 
 def nombre_base(etiqueta):
     return etiqueta.split(',')[0].strip().lower()
+
+#Prueba para que los bordes del Segformer vayan pegados a la image
+def guided_filter(I, p, r, eps):
+    """Filtro guiado (He et al.): ajusta p a los bordes de I. I y p: float32 en [0, 1]."""
+    k = (2 * r + 1, 2 * r + 1)
+    mean_I = cv2.boxFilter(I, -1, k)
+    mean_p = cv2.boxFilter(p, -1, k)
+    cov_Ip = cv2.boxFilter(I * p, -1, k) - mean_I * mean_p
+    var_I = cv2.boxFilter(I * I, -1, k) - mean_I * mean_I
+    a = cov_Ip / (var_I + eps)
+    b = mean_p - a * mean_I
+    return cv2.boxFilter(a, -1, k) * I + cv2.boxFilter(b, -1, k)
+
 
 
 class PercepcionCompleta(Node):
@@ -242,9 +258,11 @@ class PercepcionCompleta(Node):
         return mask
 
     def calcular_suelo(self, frame):
-        """SegFormer -> máscara transitable a baja resolución (seg_h x seg_w, 0/255)."""
+        """SegFormer + bordes afinados con la imagen -> máscara transitable (H x W, 0/255)."""
+        H, W = frame.shape[:2]
         sw, sh = self.seg_w, self.seg_h
         small = cv2.resize(frame, (sw, sh), interpolation=cv2.INTER_AREA)
+
         rgb = cv2.cvtColor(small, cv2.COLOR_BGR2RGB).astype(np.float32) / 255.0
         rgb = (rgb - MEAN) / STD
         x = torch.from_numpy(rgb.transpose(2, 0, 1)).unsqueeze(0)
@@ -257,17 +275,29 @@ class PercepcionCompleta(Node):
             if self.road_id is not None:
                 road = lg[self.road_id] - lg[self.nonroad_idx].max(dim=0).values
 
-        walk = cv2.resize(walk.numpy(), (sw, sh), interpolation=cv2.INTER_LINEAR)
-        mask = self.limpiar((walk > 0).astype(np.uint8) * 255)
+        # Puntuación -> resolución completa -> filtro guiado con la imagen en gris
+        score = cv2.resize(walk.numpy(), (W, H), interpolation=cv2.INTER_LINEAR)
+        p = np.clip(score / 8.0 + 0.5, 0.0, 1.0).astype(np.float32)
+        gris = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY).astype(np.float32) / 255.0
+        p = guided_filter(gris, p, GF_RADIO, GF_EPS)
+        mask = self.limpiar((p > 0.5).astype(np.uint8) * 255)
 
+        # Paso de cebra, también a resolución completa
         if road is not None:
-            road = cv2.resize(road.numpy(), (sw, sh), interpolation=cv2.INTER_LINEAR) > 0
-            gray = cv2.cvtColor(small, cv2.COLOR_BGR2GRAY)
-            blanco = ((gray > self.umbral_blanco) & road).astype(np.uint8) * 255
-            cebra = cv2.morphologyEx(blanco, cv2.MORPH_CLOSE, self.kernel_cebra)
-            mask[(cebra > 0) & road] = 255
+            road_f = cv2.resize(road.numpy(), (W, H), interpolation=cv2.INTER_LINEAR) > 0
+            blanco = ((gris > self.umbral_blanco / 255.0) & road_f).astype(np.uint8) * 255
+            kw = max(3, int(round(13 * W / sw)))
+            kh = max(3, int(round(9 * H / sh)))
+            kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (kw, kh))
+            cebra = cv2.morphologyEx(blanco, cv2.MORPH_CLOSE, kernel)
+            mask[(cebra > 0) & road_f] = 255
         return mask
-
+    
+    def ampliar(self, m, W, H):
+        """Escala una máscara pequeña con bordes redondeados en vez de bloques."""
+        g = cv2.resize(m, (W, H), interpolation=cv2.INTER_LINEAR)
+        return cv2.threshold(g, 127, 255, cv2.THRESH_BINARY)[1]
+        
     def _worker(self):
         # Los hilos de torch se fijan DENTRO de este hilo (en otros hilos no se hereda)
         torch.set_num_threads(self.torch_threads)
@@ -459,8 +489,7 @@ class PercepcionCompleta(Node):
                     final = cv2.resize(sem, (W, H), interpolation=cv2.INTER_LINEAR)
                     final = cv2.threshold(final, 127, 255, cv2.THRESH_BINARY)[1]
                 if geo is not None:
-                    bloq = cv2.resize(cv2.bitwise_or(geo[0], geo[1]), (W, H),
-                                      interpolation=cv2.INTER_NEAREST)
+                    bloq = self.ampliar(cv2.bitwise_or(geo[0], geo[1]), W, H)
                     final[bloq > 0] = 0
                 esc = np.array([W, H], dtype=np.float32)
                 for poly, _ in polys:
@@ -497,11 +526,14 @@ class PercepcionCompleta(Node):
 
     # =====================================================================
     def dibujar(self, msg, frame, final, geo, polys, names, dist_pub, desn_pub, H, W):
+        k = W / 640.0                                  # escala del texto según la resolución
+        grosor = max(1, int(round(2 * k)))
+
         clase = np.zeros((H, W), dtype=np.uint8)
         clase[final > 0] = 1
         if geo is not None:
-            o = cv2.resize(geo[0], (W, H), interpolation=cv2.INTER_NEAREST) > 0
-            dz = cv2.resize(geo[1], (W, H), interpolation=cv2.INTER_NEAREST) > 0
+            o = self.ampliar(geo[0], W, H) > 0
+            dz = self.ampliar(geo[1], W, H) > 0
             clase[o] = 2
             clase[dz] = 3
 
@@ -512,9 +544,9 @@ class PercepcionCompleta(Node):
         esc = np.array([W, H], dtype=np.float32)
         for poly, c in polys:
             pts = (poly * esc).astype(np.int32)
-            cv2.polylines(vis, [pts], True, (255, 200, 0), 2)
+            cv2.polylines(vis, [pts], True, (255, 200, 0), grosor)
             org = (int(pts[0][0]), int(pts[0][1]))
-            cv2.putText(vis, str(names.get(c, c)), org, FONT, 0.5, (255, 200, 0), 1)
+            cv2.putText(vis, str(names.get(c, c)), org, FONT, 0.5 * k, (255, 200, 0), 1)
 
         if np.isnan(dist_pub):
             estado = 'SIN DATOS 3D'
@@ -524,9 +556,9 @@ class PercepcionCompleta(Node):
             estado = 'Camino libre'
         if desn_pub:
             estado += ' | DESNIVEL'
-        cv2.putText(vis, self.hud1, (10, 25), FONT, 0.55, (0, 255, 255), 2)
-        cv2.putText(vis, self.hud2, (10, 50), FONT, 0.55, (0, 255, 255), 2)
-        cv2.putText(vis, estado, (10, 80), FONT, 0.7, (255, 255, 255), 2)
+        cv2.putText(vis, self.hud1, (6, int(24 * k)), FONT, 0.55 * k, (0, 255, 255), 1)
+        cv2.putText(vis, self.hud2, (6, int(48 * k)), FONT, 0.55 * k, (0, 255, 255), 1)
+        cv2.putText(vis, estado, (6, int(78 * k)), FONT, 0.7 * k, (255, 255, 255), 1)
 
         if self.pub_visu.get_subscription_count() > 0:
             mv = self.bridge.cv2_to_imgmsg(vis, encoding='bgr8')
@@ -535,7 +567,11 @@ class PercepcionCompleta(Node):
 
         if self.debug_view:
             m3 = cv2.cvtColor(final, cv2.COLOR_GRAY2BGR)
-            cv2.putText(m3, 'MASCARA NAVEGABLE', (10, 30), FONT, 0.6, (255, 255, 255), 2)
+            cv2.putText(m3, 'MASCARA NAVEGABLE', (6, int(30 * k)), FONT, 0.6 * k,
+                        (255, 255, 255), 1)
+            if not getattr(self, 'win_ajustada', False):
+                cv2.resizeWindow(WIN, int(3 * W), int(1.5 * H))   # imagen + máscara a 1,5x
+                self.win_ajustada = True
             cv2.imshow(WIN, np.hstack((vis, m3)))
             cv2.waitKey(1)
 
@@ -547,6 +583,8 @@ class PercepcionCompleta(Node):
 
 def main(args=None):
     rclpy.init(args=args)
+    #prueba con menos hilos
+    cv2.setNumThreads(1)
     nodo = PercepcionCompleta()
     try:
         rclpy.spin(nodo)
