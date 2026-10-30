@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing ia.egg-info/PKG-INFO
+writing dependency_links to ia.egg-info/dependency_links.txt
+writing entry points to ia.egg-info/entry_points.txt
+writing requirements to ia.egg-info/requires.txt
+writing top-level names to ia.egg-info/top_level.txt
+reading manifest file 'ia.egg-info/SOURCES.txt'
+writing manifest file 'ia.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/python3.14/site-packages/ia.egg-link (link to .)
+Installing detector_yolo script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+Installing percepcion_3d script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+Installing percepcion_completa script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+Installing percepcion_fusion script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+Installing publicador_foto script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+Installing segmentador_suelo script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+
+Installed /home/lola/Documentos/ROS2/supergiz_ws/build/ia
+running symlink_data

@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.002632] (ia) JobQueued: {'identifier': 'ia', 'dependencies': OrderedDict()}
+[0.002752] (ia) JobStarted: {'identifier': 'ia'}
+[0.099888] (-) TimerEvent: {}
+[0.205062] (-) TimerEvent: {}
+[0.309731] (-) TimerEvent: {}
+[0.409976] (-) TimerEvent: {}
+[0.510246] (-) TimerEvent: {}
+[0.610599] (-) TimerEvent: {}
+[0.713416] (-) TimerEvent: {}
+[0.813734] (-) TimerEvent: {}
+[0.914016] (-) TimerEvent: {}
+[1.014272] (-) TimerEvent: {}
+[1.114622] (-) TimerEvent: {}
+[1.214980] (-) TimerEvent: {}
+[1.315367] (-) TimerEvent: {}
+[1.415611] (-) TimerEvent: {}
+[1.515820] (-) TimerEvent: {}
+[1.618179] (-) TimerEvent: {}
+[1.718438] (-) TimerEvent: {}
+[1.818657] (-) TimerEvent: {}
+[1.918932] (-) TimerEvent: {}
+[2.022574] (-) TimerEvent: {}
+[2.122820] (-) TimerEvent: {}
+[2.223082] (-) TimerEvent: {}
+[2.323659] (-) TimerEvent: {}
+[2.427189] (-) TimerEvent: {}
+[2.527472] (-) TimerEvent: {}
+[2.628506] (-) TimerEvent: {}
+[2.728839] (-) TimerEvent: {}
+[2.829660] (-) TimerEvent: {}
+[2.929926] (-) TimerEvent: {}
+[3.030297] (-) TimerEvent: {}
+[3.130547] (-) TimerEvent: {}
+[3.231201] (-) TimerEvent: {}
+[3.333628] (-) TimerEvent: {}
+[3.434123] (-) TimerEvent: {}
+[3.534596] (-) TimerEvent: {}
+[3.635587] (-) TimerEvent: {}
+[3.735844] (-) TimerEvent: {}
+[3.836388] (-) TimerEvent: {}
+[3.936671] (-) TimerEvent: {}
+[4.037171] (-) TimerEvent: {}
+[4.106767] (ia) Command: {'cmd': ['/home/lola/Documentos/ROS2/.pixi/envs/default/bin/python3.14', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/lola/Documentos/ROS2/supergiz_ws/build/ia/build', '--no-deps', 'symlink_data'], 'cwd': '/home/lola/Documentos/ROS2/supergiz_ws/build/ia', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'EGL_PLATFORM': 'wayland', 'USE_LOCAL_OAUTH': '', 'PIXI_ENVIRONMENT_NAME': 'default', 'CLAUDE_CODE_TERMINAL_MCP_TOOLS': 'mcp__ccd_turn__wrap_up', 'AI_AGENT': 'claude-code_2-1-309_agent', 'USER': 'lola', 'CLAUDE_CODE_ENTRYPOINT': 'claude-desktop', 'CONDA_MKL_INTERFACE_LAYER_BACKUP': '', 'GIT_EDITOR': 'true', 'CLAUDE_CODE_EAGER_FLUSH': '1', 'XDG_SESSION_TYPE': 'wayland', 'PIXI_EXE': '/home/lola/.pixi/bin/pixi', 'CLAUDE_AGENT_SDK_VERSION': '0.3.309', 'ROS_ETC_DIR': '/home/lola/Documentos/ROS2/.pixi/envs/default/etc/ros', 'CLAUDE_CODE_SESSION_ATTENDED': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/lola/Documentos/ROS2/.pixi/envs/default/opt/rviz_ogre_vendor/lib', 'CLAUDE_CODE_MESSAGING_TOKEN': 'a066f9f5759aec3f11ff2d77622ca3fb', 'HOME': '/home/lola', 'CHROME_DESKTOP': 'com.anthropic.Claude.desktop', 'CONDA_SHLVL': '1', 'DISABLE_MICROCOMPACT': '1', 'OLDPWD': '/home/lola/Documentos/ROS2', 'USE_STAGING_OAUTH': '', 'DESKTOP_SESSION': 'ubuntu', 'CLAUDE_CODE_DESKTOP_APP_VERSION': '4.29.0', 'IM_CONFIG_ENTRY': 'profile', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.anthropic.Claude.desktop', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge', 'CLAUDE_CODE_CHILD_SESSION': '1', 'MANAGERPID': '3213', 'PIXI_IN_SHELL': '1', 'SYSTEMD_EXEC_PID': '3627', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '60838', 'CLAUDE_CODE_SDK_HAS_HOST_AUTH_REFRESH': '1', 'CLAUDE_CODE_HOST_SESSION_ID': 'local_600a22b1-6d80-48fa-be02-57621cc5d291', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'BAGGAGE': 'sentry-environment=production,sentry-release=Claude%404.29.0,sentry-public_key=2f98127cbffe4740b1f767a2de77d23b,sentry-trace_id=4856cff27e0140c38a13aea041cb4b1e,sentry-org_id=1158394', 'WAYLAND_DISPLAY': 'wayland-0', 'API_TIMEOUT_MS': '900000', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lola', 'CLAUDE_CODE_SIMPLE': '0', 'PYTHONDONTWRITEBYTECODE': '1', 'CLAUDE_CODE_EMIT_STARTUP_TIMING': '1', 'MANAGERPIDFDID': '4538', 'JOURNAL_STREAM': '10:22294', '_': '/home/lola/Documentos/ROS2/.pixi/envs/default/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lola', 'ANTHROPIC_BASE_URL': 'https://api.anthropic.com', 'PIXI_WORKSPACE_VERSION': 'NO_VERSION_SPECIFIED', 'PIXI_ENVIRONMENT_PLATFORMS': 'linux-64', 'CLAUDE_CODE_ENABLE_ASK_USER_QUESTION_TOOL': 'true', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'CLAUDE_CODE_USER_EMAIL': 'lolitamgmar@gmail.com', 'FC_FONTATIONS': '1', 'CLAUDE_CODE_ACCOUNT_UUID': '66664d20-e653-4a23-9cbc-616a45ab4789', 'ROS_OS_OVERRIDE': 'conda:linux', 'CLAUDE_CODE_REPORT_FINDINGS': '1', 'CLAUDE_AGENT_SDK_MCP_NO_PREFIX': '0', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/home/lola/Documentos/ROS2/.pixi/envs/default/bin:/home/lola/.pixi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'INVOCATION_ID': 'a447a4203a0f420a81c2ee4b74c13506', 'PROJ_NETWORK': 'ON', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': 'unix:/tmp/.X11-unix/X1', 'PIXI_PROJECT_VERSION': 'NO_VERSION_SPECIFIED', 'PROJ_DATA': '/home/lola/Documentos/ROS2/.pixi/envs/default/share/proj', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_CODE_ORGANIZATION_UUID': '31458c43-1687-4cfe-a8aa-0c0da5bbd5b9', 'CLAUDE_EFFORT': 'medium', 'DISPLAY': ':0', 'MCP_SERVER_CONNECTION_BATCH_SIZE': '8', 'CLAUDE_PID': '61529', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.KZ7TX3', 'SSH_AUTH_SOCK': '/run/user/1000/gcr/ssh', 'PIXI_PROMPT': '(entorno_ros2)', 'XML_CATALOG_FILES': 'file:///home/lola/Documentos/ROS2/.pixi/envs/default/etc/xml/catalog file:///etc/xml/catalog', 'GSETTINGS_SCHEMA_DIR': '/home/lola/Documentos/ROS2/.pixi/envs/default/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/lola/Documentos/ROS2/.pixi/envs/default', 'PIXI_WORKSPACE_ROOT': '/home/lola/Documentos/ROS2', 'SHELL': '/bin/bash', 'CLAUDE_CODE_STARTUP_FAILURE_RESULTS': '1', 'QT_ACCESSIBILITY': '1', 'CLAUDE_PREVIEW_CLASSIFIER_FLOOR': '1', 'PIXI_WORKSPACE_MANIFEST': '/home/lola/Documentos/ROS2/pixi.toml', 'CLAUDE_CODE_DISABLE_TERMINAL_TITLE': '1', 'GDMSESSION': 'ubuntu', 'CLAUDE_CODE_EMIT_TOOL_USE_SUMMARIES': 'false', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'CLAUDE_CODE_SESSION_ID': 'e74abde7-a188-4375-984a-1bcee19499c2', 'CLAUDE_CODE_DISABLE_CRON': '', 'CONDA_DEFAULT_ENV': 'entorno_ros2', 'NODE_USE_SYSTEM_CA': '1', 'CLAUDECODE': '1', 'CLAUDE_CODE_OAUTH_SCOPES': 'user:inference user:file_upload user:profile user:sessions:claude_code user:plugins', 'PIXI_WORKSPACE_NAME': 'entorno_ros2', 'PIXI_PROJECT_ROOT': '/home/lola/Documentos/ROS2', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'PIXI_PROJECT_MANIFEST': '/home/lola/Documentos/ROS2/pixi.toml', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lola/Documentos/ROS2/supergiz_ws/build/ia', 'DISABLE_AUTOUPDATER': '1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PIXI_PROJECT_NAME': 'entorno_ros2', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'CLAUDE_CODE_EXECPATH': '/home/lola/.config/Claude/claude-code/2.1.309/e52289b95def/claude', 'XDG_SESSION_EXTRA_DEVICE_ACCESS': 'render:accel', 'PYTHONPATH': '/home/lola/Documentos/ROS2/supergiz_ws/build/ia/prefix_override:/home/lola/Documentos/ROS2/.pixi/envs/default/lib/python3.14/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/python3.14/site-packages:/home/lola/Documentos/ROS2/.pixi/envs/default/lib/python/site-packages:/home/lola/Documentos/ROS2/.pixi/envs/default/opt/gz_math_vendor/lib/python:/home/lola/Documentos/ROS2/.pixi/envs/default/lib/python3.14/site-packages', 'CONDA_PREFIX': '/home/lola/Documentos/ROS2/.pixi/envs/default', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'MKL_INTERFACE_LAYER': 'LP64,GNU', 'COLCON': '1', 'QT_IM_MODULES': 'wayland;ibus', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CLAUDE_CODE_MESSAGING_SOCKET': '/run/user/1000/cc-socks/61529.sock', 'INIT_CWD': '/home/lola/Documentos/ROS2'}), 'shell': False}
+[4.137639] (-) TimerEvent: {}
+[4.238032] (-) TimerEvent: {}
+[4.338575] (-) TimerEvent: {}
+[4.440341] (-) TimerEvent: {}
+[4.540605] (-) TimerEvent: {}
+[4.606985] (ia) StderrLine: {'line': b"/home/lola/Documentos/ROS2/.pixi/envs/default/lib/python3.14/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[4.607315] (ia) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[4.640704] (-) TimerEvent: {}
+[4.741398] (-) TimerEvent: {}
+[4.841652] (-) TimerEvent: {}
+[4.942376] (-) TimerEvent: {}
+[5.042904] (-) TimerEvent: {}
+[5.143657] (-) TimerEvent: {}
+[5.244232] (-) TimerEvent: {}
+[5.257421] (ia) StdoutLine: {'line': b'running develop\n'}
+[5.344641] (-) TimerEvent: {}
+[5.445208] (-) TimerEvent: {}
+[5.545490] (-) TimerEvent: {}
+[5.635223] (ia) StdoutLine: {'line': b'running egg_info\n'}
+[5.645643] (-) TimerEvent: {}
+[5.680162] (ia) StdoutLine: {'line': b'writing ia.egg-info/PKG-INFO\n'}
+[5.680460] (ia) StdoutLine: {'line': b'writing dependency_links to ia.egg-info/dependency_links.txt\n'}
+[5.680576] (ia) StdoutLine: {'line': b'writing entry points to ia.egg-info/entry_points.txt\n'}
+[5.680677] (ia) StdoutLine: {'line': b'writing requirements to ia.egg-info/requires.txt\n'}
+[5.683266] (ia) StdoutLine: {'line': b'writing top-level names to ia.egg-info/top_level.txt\n'}
+[5.744322] (ia) StdoutLine: {'line': b"reading manifest file 'ia.egg-info/SOURCES.txt'\n"}
+[5.745735] (-) TimerEvent: {}
+[5.748150] (ia) StdoutLine: {'line': b"writing manifest file 'ia.egg-info/SOURCES.txt'\n"}
+[5.748449] (ia) StdoutLine: {'line': b'running build_ext\n'}
+[5.776915] (ia) StdoutLine: {'line': b'Creating /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/python3.14/site-packages/ia.egg-link (link to .)\n'}
+[5.779978] (ia) StdoutLine: {'line': b'Installing detector_yolo script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia\n'}
+[5.782090] (ia) StdoutLine: {'line': b'Installing percepcion_3d script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia\n'}
+[5.784739] (ia) StdoutLine: {'line': b'Installing percepcion_completa script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia\n'}
+[5.784945] (ia) StdoutLine: {'line': b'Installing percepcion_fusion script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia\n'}
+[5.785016] (ia) StdoutLine: {'line': b'Installing publicador_foto script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia\n'}
+[5.785084] (ia) StdoutLine: {'line': b'Installing segmentador_suelo script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia\n'}
+[5.785149] (ia) StdoutLine: {'line': b'\n'}
+[5.785212] (ia) StdoutLine: {'line': b'Installed /home/lola/Documentos/ROS2/supergiz_ws/build/ia\n'}
+[5.786451] (ia) StdoutLine: {'line': b'running symlink_data\n'}
+[5.793852] (ia) StdoutLine: {'line': b'creating /home/lola/Documentos/ROS2/supergiz_ws/install/ia/share/ia/launch\n'}
+[5.794100] (ia) StdoutLine: {'line': b'symbolically linking /home/lola/Documentos/ROS2/supergiz_ws/build/ia/launch/percepcion.launch.py -> /home/lola/Documentos/ROS2/supergiz_ws/install/ia/share/ia/launch\n'}
+[5.794199] (ia) StdoutLine: {'line': b'creating /home/lola/Documentos/ROS2/supergiz_ws/install/ia/share/ia/config\n'}
+[5.794292] (ia) StdoutLine: {'line': b'symbolically linking /home/lola/Documentos/ROS2/supergiz_ws/build/ia/config/percepcion.yaml -> /home/lola/Documentos/ROS2/supergiz_ws/install/ia/share/ia/config\n'}
+[5.846052] (-) TimerEvent: {}
+[5.946621] (-) TimerEvent: {}
+[5.997929] (ia) CommandEnded: {'returncode': 0}
+[6.046695] (-) TimerEvent: {}
+[6.058265] (ia) JobEnded: {'identifier': 'ia', 'rc': 0}
+[6.059911] (-) EventReactorShutdown: {}

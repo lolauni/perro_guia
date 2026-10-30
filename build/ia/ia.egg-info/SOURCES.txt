@@ -8,6 +8,7 @@ setup.py
 ../../build/ia/ia.egg-info/requires.txt
 ../../build/ia/ia.egg-info/top_level.txt
 ../../build/ia/ia.egg-info/zip-safe
+config/percepcion.yaml
 ia/percepcion_3d.py
 ia/percepcion_completa.py
 ia/publicador_foto.py
@@ -18,4 +19,5 @@ ia.egg-info/entry_points.txt
 ia.egg-info/requires.txt
 ia.egg-info/top_level.txt
 ia.egg-info/zip-safe
+launch/percepcion.launch.py
 resource/ia

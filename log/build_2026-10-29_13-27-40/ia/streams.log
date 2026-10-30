@@ -1,0 +1,28 @@
+[4.105s] Invoking command in '/home/lola/Documentos/ROS2/supergiz_ws/build/ia': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(entorno_ros2) PYTHONPATH=/home/lola/Documentos/ROS2/supergiz_ws/build/ia/prefix_override:/home/lola/Documentos/ROS2/.pixi/envs/default/lib/python3.14/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/python3.14/site-packages:${PYTHONPATH} /home/lola/Documentos/ROS2/.pixi/envs/default/bin/python3.14 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lola/Documentos/ROS2/supergiz_ws/build/ia/build --no-deps symlink_data
+[4.604s] /home/lola/Documentos/ROS2/.pixi/envs/default/lib/python3.14/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[4.605s]   warnings.warn(msg)
+[5.255s] running develop
+[5.633s] running egg_info
+[5.678s] writing ia.egg-info/PKG-INFO
+[5.678s] writing dependency_links to ia.egg-info/dependency_links.txt
+[5.678s] writing entry points to ia.egg-info/entry_points.txt
+[5.678s] writing requirements to ia.egg-info/requires.txt
+[5.681s] writing top-level names to ia.egg-info/top_level.txt
+[5.742s] reading manifest file 'ia.egg-info/SOURCES.txt'
+[5.746s] writing manifest file 'ia.egg-info/SOURCES.txt'
+[5.746s] running build_ext
+[5.775s] Creating /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/python3.14/site-packages/ia.egg-link (link to .)
+[5.777s] Installing detector_yolo script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+[5.779s] Installing percepcion_3d script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+[5.782s] Installing percepcion_completa script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+[5.782s] Installing percepcion_fusion script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+[5.782s] Installing publicador_foto script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+[5.782s] Installing segmentador_suelo script to /home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/ia
+[5.782s] 
+[5.782s] Installed /home/lola/Documentos/ROS2/supergiz_ws/build/ia
+[5.784s] running symlink_data
+[5.791s] creating /home/lola/Documentos/ROS2/supergiz_ws/install/ia/share/ia/launch
+[5.791s] symbolically linking /home/lola/Documentos/ROS2/supergiz_ws/build/ia/launch/percepcion.launch.py -> /home/lola/Documentos/ROS2/supergiz_ws/install/ia/share/ia/launch
+[5.792s] creating /home/lola/Documentos/ROS2/supergiz_ws/install/ia/share/ia/config
+[5.792s] symbolically linking /home/lola/Documentos/ROS2/supergiz_ws/build/ia/config/percepcion.yaml -> /home/lola/Documentos/ROS2/supergiz_ws/install/ia/share/ia/config
+[5.997s] Invoked command in '/home/lola/Documentos/ROS2/supergiz_ws/build/ia' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PIXI_PROMPT=(entorno_ros2) PYTHONPATH=/home/lola/Documentos/ROS2/supergiz_ws/build/ia/prefix_override:/home/lola/Documentos/ROS2/.pixi/envs/default/lib/python3.14/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/lola/Documentos/ROS2/supergiz_ws/install/ia/lib/python3.14/site-packages:${PYTHONPATH} /home/lola/Documentos/ROS2/.pixi/envs/default/bin/python3.14 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lola/Documentos/ROS2/supergiz_ws/build/ia/build --no-deps symlink_data

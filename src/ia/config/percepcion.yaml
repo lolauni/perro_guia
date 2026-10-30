@@ -1,0 +1,35 @@
+# Parámetros de percepcion_fusion (perro guía Supergiz).
+# Uso:  ros2 launch ia percepcion.launch.py
+#       ros2 launch ia percepcion.launch.py ventana:=false     (sin pantalla, p. ej. en el robot)
+percepcion_completa:
+  ros__parameters:
+    base_path: /home/lola/Documentos/ROS2/supergiz_ws   # donde están los modelos (yolov8n-seg, modelos/)
+
+    # Cámara (tópicos de realsense2_camera)
+    topico_color: /camera/camera/color/image_raw
+    topico_depth: /camera/camera/aligned_depth_to_color/image_raw
+    topico_info: /camera/camera/color/camera_info
+
+    # Suelo navegable: geometria | semantica | ambas
+    fuente_suelo: geometria
+    segformer: tobiasc/segformer-b0-finetuned-segments-sidewalk   # o una ruta local (modelos/...)
+    ver_clases: false
+
+    # Geometría (D435 a ~15 cm del suelo)
+    dist_min: 0.25
+    dist_max: 4.0
+    obst_min: 0.08          # m sobre el suelo para ser obstáculo (+3 cm por metro)
+    desnivel_min: 0.10      # m bajo el suelo para ser desnivel (+3 cm por metro)
+    suelo_tol: 0.04
+    fila_suelo: 0.6
+
+    # Salidas para la navegación
+    scan_frame: camera_link
+    altura_nube_desnivel: 0.05
+
+    # Detectores
+    yolo_imgsz: 320
+    yolo_conf: 0.35
+    tactil_modelo: modelos/yolo11n_tactile.pt   # '' para desactivarlo
+    tactil_conf: 0.25
+    tactil_periodo: 0.25

@@ -1,0 +1,1 @@
+/home/lola/Documentos/ROS2/supergiz_ws/build/ia/launch/percepcion.launch.py
